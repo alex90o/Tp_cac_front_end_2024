@@ -1,0 +1,347 @@
+:root {
+    --font-cursive: 'Caveat', cursive;
+    --font-form: 'Roboto', sans-serif;
+
+    --std-text-01: black;
+    --std-text-02: white; 
+
+    --bg-01: lightblue;
+    --bg-02: lightsteelblue;
+    --bg-03: aliceblue;
+
+    --border-01: black;    
+    --border-02: white;
+
+    --redes-ig: #52b4f7;
+
+    --color-active: paleturquoise;
+    --border-active: whitesmoke;
+    --bright-active: snow;
+
+
+    /* font resposvas */
+    --16px: 1rem;  /* default,  input, seclect, textarea */
+    --18px: 1.125rem;  /* submit */
+    --20px: 1.25rem;  /* .titulo */
+    --25px: 1.563rem; /* p-3 --> novedades__cursos */
+    --30px: 1.875rem; /* nav. footer, p-1 -> index__descript, p-2 -> novedades__talleres */
+    --40px: 2.5rem; /* h3 */
+    --80px-h1: 5rem;  /* h1*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg-03);
+}
+
+/* Icono del menu */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon i {
+    font-size: 8vw;
+    color: var(--std-text-02);
+}
+
+/* Meni de navegacion */
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 2vw;
+    min-height: 6vw;
+    background: var(--bg-01);
+    box-shadow: inset 0 0 0 0.17em var(--border-01);
+}
+
+.navigation a {
+    text-decoration: none;
+    font-family: var(--font-cursive);
+    font-size: 1.875rem;
+    display: block;
+    padding: 1em;
+    color: var(--std-text-02);
+    border: solid transparent;
+    transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navigation a:hover {
+    background: var(--color-active);
+    border: solid var(--border-active);
+    box-shadow: 0 0 1em 0.2em var(--bright-active);
+}
+
+
+
+
+
+header {
+    width: 100%;
+    max-width: 100rem;
+    margin: auto;
+}
+
+section {
+    width: 100%;
+    max-width: 100rem;
+    margin: auto;
+}
+
+.titulo {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 2vw;
+    margin: 2vw;
+    font-family: var(--font-cursive);
+    font-size: 10vw;
+    background: var(--bg-01);
+    border: solid var(--border-01);
+}
+
+h1 {
+    text-align: center;
+    padding: 2vw;
+    margin: 2vw;
+    font-family: var(--font-cursive);
+    font-size: 10vw;
+    background: var(--bg-01);
+    border: solid var(--border-01);
+}
+
+
+
+.p-1 {
+    padding: 3vw;
+    font-family: var(--font-cursive);
+    font-size: 1.875rem;
+    margin: 2vw;
+}
+
+h3 {
+    text-align: center;
+    font-family: var(--font-cursive);
+    font-size: 2.5rem;
+    margin: 2vw;
+    background: var(--bg-01);
+    border: solid var(--border-01);
+
+}
+
+.grilla {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin: 1vh 2vw;
+    flex-wrap: wrap;
+}
+
+/* imgs en la grilla */
+.grilla .F img {
+    width: 100%;
+    height: auto;
+    max-width: 30vw;
+    margin-bottom: 1rem;
+}
+
+.p-2 {
+    text-align: center;
+    padding: 3vw;
+    font-family: var(--font-cursive);
+    font-size: 1.875rem;
+    margin: 2vw;
+}
+
+.taller {
+    display: grid;
+    place-items: center;
+    background-size: contain;
+    gap: 2vw;
+}
+
+/* pagina de equipo */
+#equipo .grilla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1vh 2vw;
+}
+
+/* img en la pagina de equipo */
+#equipo .grilla img {
+    display: block; 
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 2vw;
+    font-family: var(--font-cursive);
+    font-size: 1.875em;
+    margin: 2vw;
+}
+
+.instagram-link,
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+.instagram-link,
+.footer-text {
+    font-size: 1.875rem;
+    font-family: var(--font-cursive);
+    margin: 2vw;
+}
+
+.lista-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-3 {
+    padding: 0.5vw;
+    font-family: var(--font-cursive);
+    font-size: 1.563rem;
+    margin: 2vw;
+}
+
+/* ##################   ########################## */
+.F img {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* formularios */
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 2vw auto;
+    padding: 2vw;
+    border: 1px solid var(--border-01);
+    border: solid var(--border-01);
+    background: var(--bg-02);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 0.5vh;
+}
+
+.form-group label {
+    font-family: var(--font-form);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3vh;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    display: block;
+    width: 96%;
+    padding: 1vw;
+    font-size: 1rem;
+    border: 1px solid var(--border-01);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
+    margin-bottom: 1.5vh;
+}
+
+.form-group-radio {
+    font-family: var(--font-form);    
+    padding: 0.5em 0;
+    margin-bottom: 0.5em;
+}
+
+.form-group-radio .legend-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.form-group-radio .group-radio .radio-label {
+    padding-left: 0.5em;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+/* Estilo para los botones de radio */
+input[type="radio"] {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+input[type="radio"]:checked {
+    accent-color: var(--color-active);
+}
+
+/* ################################################## */
+
+form select {
+    width: 100% !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 99.8%;
+    background: var(--bg-01);
+    color: var(--std-text-02);
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 1.125rem;
+    transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+    border: solid var(--border-01);
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+
+form input[type="submit"]:hover {
+    background: var(--color-active);
+    border: solid var(--border-active);
+    box-shadow: 0 0 1.5em var(--bright-active);
+
+}
+
+.icon-instagram {
+    color: var(--redes-ig);    
+}
+
+/* mapa */
+.mapa {
+    text-align: center;
+}
+
+.mapa iframe {
+    display: inline-block;
+    border: solid var(--border-01) !important;
+}

@@ -1,0 +1,95 @@
+/* Estilos responsivos - Menu */
+@media all and (max-width: 800px) {
+    .menu-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; 
+        padding: 0 2vw;
+    }
+
+    .menu-links {
+        display: none; /* Oculta los enlaces del menú */
+        flex-direction: column; /* Dispone los enlaces verticalmente */
+        width: 100%;
+        background: var(--bg-01);
+    }
+
+    .menu-links a {
+        padding: 1.5vw;
+        border-top: 1px solid var(--border-01);
+    }
+    /* Muestra los enlaces del menú cuando está activo */
+    .menu-links.show {
+        display: flex; 
+    }
+}
+
+/* Estilos responsivos - Menu Icon */
+@media all and (min-width: 801px) {
+    .menu-icon {
+        display: none; /* Oculta el ícono del menú */
+    }
+
+    .menu-links {
+        display: flex;
+        flex-direction: row;
+    }
+}
+/* imagenes */
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+
+    .grilla {
+        flex-direction: column;
+        align-items: center;
+    }
+    .grilla .F {
+        max-width: 30vw;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 1vw;
+    }
+
+    .grilla {
+        flex-direction: column;
+        align-items: center;
+    }
+    .grilla .F img {
+        width: 30vw;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .taller {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilos responsivos h1 */
+@media (min-width: 600px) {
+    h1 {
+        font-size: 8vw;
+    }
+}
+
+@media (min-width: 900px) {
+    h1 {
+        font-size: 5rem;
+        padding: 3vw;
+        margin: 2vw;
+    }
+}

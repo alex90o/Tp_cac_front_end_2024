@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagenes/favicon-32x32.png">
+        <link rel="stylesheet" href="estilo/estilo.css">
+        <link rel="stylesheet" href="estilo/responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Contactanos</title>
+    </head>
+
+    <body>
+        <nav class="navigation">
+            <div class="menu-icon" id="menu-icon">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="menu-links" id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="novedades.html">Novedades</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="contacto.html">Contactanos</a>
+            </div>
+        </nav>
+
+        <header>
+            <h1>Contactanos</h1>
+        </header>
+
+        <h3>Agenda tu turno con un profesional</h3>
+
+        <div class="form-container">
+            <form action="mailto" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre y Apellido:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre y apellido"
+                        autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" id="edad" min="6" max="100" step="1">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Celular de contacto:</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="sin el 0 ni el 15">
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" name="correo" id="correo" placeholder="Correo">
+                </div>
+                <div class="form-group">
+                    <label for="Turnos">Disponibilidad horaria:</label>
+                    <select name="Turnos" id="Turnos">
+                        <option value="mañana">Mañana</option>
+                        <option value="tarde">Tarde</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+
+        <h3>Reserva tu lugar para los talleres y cursos de capacitación profesional</h3>
+
+        <div class="form-container">
+            <form action="mailto" method="post">
+                <div class="form-group">
+                    <label for="nombre-taller">Nombre y Apellido:</label>
+                    <input type="text" name="nombre-taller" id="nombre-taller"
+                        placeholder="Ingrese su nombre y apellido" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="edad-taller">Edad:</label>
+                    <input type="number" name="edad-taller" id="edad-taller" min="6" max="100" step="1">
+                </div>
+                <div class="form-group">
+                    <label for="telefono-taller">Celular de contacto:</label>
+                    <input type="tel" name="telefono-taller" id="telefono-taller" placeholder="sin el 0 ni el 15">
+                </div>
+                <div class="form-group">
+                    <label for="correo-taller">Correo electrónico:</label>
+                    <input type="email" name="correo-taller" id="correo-taller" placeholder="Correo">
+                </div>
+                <div class="form-group">
+                    <label for="textarea-taller">Escribinos tu consulta:</label>
+                    <textarea name="textarea-taller" id="textarea-taller" cols="50" rows="5"></textarea>
+                </div>
+                <div class="form-group-radio">
+                    <label class="legend-label">Seleccionar:</label>
+                    <div class="group-radio">
+                        <label class="radio-label" for="taller">
+                            <input type="radio" name="opcion-taller" value="taller" id="taller"> Talleres
+                        </label>
+                        <label class="radio-label" for="capacitacion">
+                            <input type="radio" name="opcion-taller" value="capacitacion" id="capacitacion">
+                            Capacitación Profesional
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+
+        <p class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.512523177182!2d-64.23938068179383!3d-31.372428650518064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432992e60ba8a27%3A0x9a8a54e3b5f135d9!2sAv.%20Fernando%20Fader%204153%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1653274189889!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </p>
+
+        <footer>
+            <p class="instagram-link">
+                <i class='bx bxl-instagram bx-tada bx-lg icon-instagram'></i>
+                <a href="https://www.instagram.com/sensussalud/?hl=es">Seguinos en Instagram</a>
+            </p>
+
+            <p class="footer-text">
+                Año 2024 | Derechos Reservados
+            </p>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+
+</html>
