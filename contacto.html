@@ -44,19 +44,19 @@
                 <div class="form-group">
                     <label for="nombre">Nombre y Apellido:</label>
                     <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre y apellido"
-                        autocomplete="off">
+                        autocomplete="off" required>
                 </div>
                 <div class="form-group">
                     <label for="edad">Edad:</label>
-                    <input type="number" name="edad" id="edad" min="6" max="100" step="1">
+                    <input type="number" name="edad" id="edad" min="6" max="100" step="1" required>
                 </div>
                 <div class="form-group">
                     <label for="telefono">Celular de contacto:</label>
-                    <input type="tel" name="telefono" id="telefono" placeholder="sin el 0 ni el 15">
+                    <input type="tel" name="telefono" id="telefono" placeholder="sin el 0 ni el 15" required>
                 </div>
                 <div class="form-group">
                     <label for="correo">Correo electrónico:</label>
-                    <input type="email" name="correo" id="correo" placeholder="Correo">
+                    <input type="email" name="correo" id="correo" placeholder="Correo" required>
                 </div>
                 <div class="form-group">
                     <label for="Turnos">Disponibilidad horaria:</label>
@@ -78,32 +78,32 @@
                 <div class="form-group">
                     <label for="nombre-taller">Nombre y Apellido:</label>
                     <input type="text" name="nombre-taller" id="nombre-taller"
-                        placeholder="Ingrese su nombre y apellido" autocomplete="off">
+                        placeholder="Ingrese su nombre y apellido" autocomplete="off" required>
                 </div>
                 <div class="form-group">
                     <label for="edad-taller">Edad:</label>
-                    <input type="number" name="edad-taller" id="edad-taller" min="6" max="100" step="1">
+                    <input type="number" name="edad-taller" id="edad-taller" min="6" max="100" step="1" required>
                 </div>
                 <div class="form-group">
                     <label for="telefono-taller">Celular de contacto:</label>
-                    <input type="tel" name="telefono-taller" id="telefono-taller" placeholder="sin el 0 ni el 15">
+                    <input type="tel" name="telefono-taller" id="telefono-taller" placeholder="sin el 0 ni el 15" required>
                 </div>
                 <div class="form-group">
                     <label for="correo-taller">Correo electrónico:</label>
-                    <input type="email" name="correo-taller" id="correo-taller" placeholder="Correo">
+                    <input type="email" name="correo-taller" id="correo-taller" placeholder="Correo" required>
                 </div>
                 <div class="form-group">
                     <label for="textarea-taller">Escribinos tu consulta:</label>
-                    <textarea name="textarea-taller" id="textarea-taller" cols="50" rows="5"></textarea>
+                    <textarea name="textarea-taller" id="textarea-taller" cols="50" rows="5" required></textarea>
                 </div>
                 <div class="form-group-radio">
                     <label class="legend-label">Seleccionar:</label>
                     <div class="group-radio">
                         <label class="radio-label" for="taller">
-                            <input type="radio" name="opcion-taller" value="taller" id="taller"> Talleres
+                            <input type="radio" name="opcion-taller" value="taller" id="taller" required> Talleres
                         </label>
                         <label class="radio-label" for="capacitacion">
-                            <input type="radio" name="opcion-taller" value="capacitacion" id="capacitacion">
+                            <input type="radio" name="opcion-taller" value="capacitacion" id="capacitacion" required>
                             Capacitación Profesional
                         </label>
                     </div>
