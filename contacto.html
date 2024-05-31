@@ -11,9 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Contactanos</title>
@@ -40,7 +38,7 @@
         <h3>Agenda tu turno con un profesional</h3>
 
         <div class="form-container">
-            <form action="mailto" method="post">
+            <form id="form1" action="mailto" method="post">
                 <div class="form-group">
                     <label for="nombre">Nombre y Apellido:</label>
                     <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre y apellido"
@@ -48,7 +46,7 @@
                 </div>
                 <div class="form-group">
                     <label for="edad">Edad:</label>
-                    <input type="number" name="edad" id="edad" min="6" max="100" step="1" required>
+                    <input type="number" name="edad" id="edad" placeholder="Entre 18 y 120 años" min="6" max="120" required>
                 </div>
                 <div class="form-group">
                     <label for="telefono">Celular de contacto:</label>
@@ -74,7 +72,7 @@
         <h3>Reserva tu lugar para los talleres y cursos de capacitación profesional</h3>
 
         <div class="form-container">
-            <form action="mailto" method="post">
+            <form id="form2" action="mailto" method="post">
                 <div class="form-group">
                     <label for="nombre-taller">Nombre y Apellido:</label>
                     <input type="text" name="nombre-taller" id="nombre-taller"
@@ -82,7 +80,7 @@
                 </div>
                 <div class="form-group">
                     <label for="edad-taller">Edad:</label>
-                    <input type="number" name="edad-taller" id="edad-taller" min="6" max="100" step="1" required>
+                    <input type="number" name="edad-taller" id="edad-taller" min="6" max="120" step="1" required placeholder="Entre 18 y 120 años">
                 </div>
                 <div class="form-group">
                     <label for="telefono-taller">Celular de contacto:</label>
@@ -100,7 +98,7 @@
                     <label class="legend-label">Seleccionar:</label>
                     <div class="group-radio">
                         <label class="radio-label" for="taller">
-                            <input type="radio" name="opcion-taller" value="taller" id="taller" required> Talleres
+                            <input type="radio" name="opcion-taller" value="taller" id="taller" checked required> Talleres
                         </label>
                         <label class="radio-label" for="capacitacion">
                             <input type="radio" name="opcion-taller" value="capacitacion" id="capacitacion" required>
