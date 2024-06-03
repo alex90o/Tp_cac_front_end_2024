@@ -145,7 +145,18 @@ function validarTextoEntrada(input, patron) {
      validarTextoEntrada(this, "[a-z ]")
  })
 
- /*
+ 
+var txttelefono = document.getElementById("telefono")
+txttelefono.addEventListener("input", function (event) {
+    validarTextoEntrada(this, "[0-9 ]+$")
+ })
+
+var txttelefono_taller = document.getElementById("telefono-taller")
+txttelefono_taller.addEventListener("input", function (event) {
+    validarTextoEntrada(this, "[0-9 ]+$")
+})
+ 
+/*
  function soloNumeros(input) {
     var regex = new RegExp("^[0-9]+$");
     var key = String.fromCharCode(!input.charCode ? input.which : input.charCode);
@@ -154,9 +165,4 @@ function validarTextoEntrada(input, patron) {
       return false;
     }
   }
-
-var txttelefono = document.getElementById("telefono")
-txttelefono.addEventListener("input", function (event) {
-    soloNumeros(this)
- })
- */
+*/
