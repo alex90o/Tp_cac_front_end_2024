@@ -3,7 +3,8 @@
     --font-form: 'Roboto', sans-serif;
 
     --std-text-01: black;
-    --std-text-02: rgb(197, 43, 43); 
+    --std-text-02: rgb(197, 43, 43);
+    --std-text-03: white; 
 
     --bg-01: lightblue;
     --bg-02: lightsteelblue;
@@ -68,7 +69,7 @@ body {
     min-height: 6vw;
     background: var(--bg-01);
     box-shadow: inset 0 0 0 0.17em var(--border-01);
-    border-radius: 8px;
+    border-radius: 0.7em;
 }
 
 .navigation a {
@@ -88,15 +89,12 @@ body {
     box-shadow: 0 0 1em 0.2em var(--bright-active);
 }
 
-
 img {
-    border-radius: 5%;
+    border-radius: 2rem; /*con 5% se quedaban esquinas en otras imgagenes con diferente resolucion*/
 }
-
 
 header {
     width: 100%;
-    /* max-width: 100rem;  (no coincide con el estilo en pantallas muy grandes)  */  
     margin: auto;
 }
 
@@ -119,7 +117,7 @@ h1 {
     font-size: 10vw;
     background: var(--bg-01);
     border: solid var(--border-01);
-    border-radius: 5px;
+    border-radius: 0.6rem;
 }
 
 h1 {
@@ -148,7 +146,7 @@ h3 {
     margin: 2vw;
     background: var(--bg-01);
     border: solid var(--border-01);
-    border-radius: 10px;
+    border-radius: 0.55rem;
 }
 
 .grilla {
@@ -248,14 +246,14 @@ footer {
 /* formularios */
 .form-container {
     width: 90%;
-    max-width: 600px;
+    max-width: 42vw;
     margin: 2vw auto;
     padding: 2vw;
     border: 1px solid var(--border-01);
     border: solid var(--border-01);
     background: var(--bg-02);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 3%;
+    border-radius: 0.8rem;
 }
 
 .form-group {
@@ -273,7 +271,7 @@ footer {
 .form-group select,
 .form-group textarea {
     display: block;
-    width: 96%;
+    width: 95%;
     padding: 1vw;
     font-size: 1rem;
     border: 1px solid var(--border-01);
@@ -281,6 +279,7 @@ footer {
     margin-right: auto;
     box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
     margin-bottom: 1.5vh;
+    border-radius: 0.4rem;
 }
 
 .form-group-radio {
@@ -336,6 +335,7 @@ form input[type="submit"] {
     border: solid var(--border-01);
     margin-top: 2vh;
     margin-bottom: 0;
+    border-radius: 0.55rem;
 }
 
 form input[type="submit"]:hover {
@@ -357,6 +357,12 @@ form input[type="submit"]:hover {
 .mapa iframe {
     display: inline-block;
     border: solid var(--border-01) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 0.8em;
+    /* width: 28vw;
+    height: 32vh; */
+    width: 46vw;
+    height: 32vh;
 }
 
 /* ################################################## */
@@ -385,7 +391,7 @@ form input[type="submit"]:hover {
     text-align: center;
     transform: translateX(-50%);
     background-color: var(--bg-alert01);
-    color: var(--std-text-02);
+    color: var(--std-text-03);
     border: solid var(--border-alert);
     padding: 1vh 0.7vw;
     padding-right: 0;
@@ -394,11 +400,12 @@ form input[type="submit"]:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 6px;
 }
 
 .close-btn {
     background-color: var(--bg-alert01);
-    color: var(--std-text-02);
+    color: var(--std-text-03);
     border: none;
     cursor: pointer;
     font-size: 1.2rem;
