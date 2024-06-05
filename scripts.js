@@ -77,6 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
             showAlert("Por favor, ingrese su correo electrónico.");
             return;
         }
+        //registro
+        window.location.href = "registro.html"
     }
 
     //validacion Talleres y Capacitacion
@@ -147,6 +149,8 @@ document.addEventListener("DOMContentLoaded", function () {
             );
             return;
         }
+        //registro
+        window.location.href = "registro.html"
     }
 });
 
